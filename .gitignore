@@ -1,0 +1,4 @@
+/sim
+/scheduler
+*.o
+a.out
