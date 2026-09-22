@@ -51,6 +51,7 @@ void TimerInterrupt(Time_t now) {
     SaveContext(running, 0);
     readyQ.push(running);
     running = readyQ.front();
+    readyQ.pop();
     LoadContext(running, 0);
     RunCore(0);
 }

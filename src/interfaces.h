@@ -47,6 +47,8 @@ Time_t GetRemaining(ProcessId_t pid);
 void SetRemainingTime(ProcessId_t pid, Time_t remaining);
 unsigned GetActiveProcesses();
 void CompleteProcess(ProcessId_t pid);
+void SetPState(CPUId_t cpu_id, PState_t p_state);
+void SetCState(CPUId_t cpu_id, CState_t c_state);
 
 
 void CStateTransitionComplete(CPUId_t core_id);
